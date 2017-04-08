@@ -1,0 +1,221 @@
+/* note(@duncanmid): CSSModules - Coda 2 Sidebar Plugin v.1.1 | © D.G. Midwinter, @duncanmid */
+
+/* @group Globals */
+
+* {
+	box-sizing: border-box !important;
+	cursor: default;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	border: 0 !important;
+	padding: 0 !important;
+}
+
+body {
+	position: relative;
+	font-family: -apple-system, Helvetica, Arial, sans-serif !important;
+	background: #142636;
+	color: #F6F7EE;
+}
+
+/* @end */
+
+/* @group Header */
+
+header {
+	width: 100%;
+	height: 30px;
+	padding: 8px 12px 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(255,255,255,.1);
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	z-index: 1;
+	overflow-x: scroll;
+	white-space: nowrap;
+}
+
+header span {
+	font-family: monospace;
+	font-weight: bold;
+	line-height: 8px;
+	vertical-align: 4px;
+	padding-right: 4px;
+}
+
+/* @end */
+
+
+/* @group Main */
+
+main {
+	margin: 30px 0;
+	padding: 0;
+	height: calc(100% - 60px);
+	overflow-y: scroll;
+}
+
+#main-list {
+	padding: 15px 0 0 0;
+	line-height: 1.4em;
+	overflow-x: hidden;
+	white-space: pre;
+}
+
+#main-list.pre-wrap {
+	white-space: pre-wrap;
+}
+
+.blur {
+	filter: blur(5px);
+}
+
+#main-list:empty {
+	height: calc(100% - 30px);
+	background: url('icon.svg') no-repeat center;
+}
+
+.code-line {
+	padding: 0 15px;
+}
+
+.code-line:hover {
+	padding: 0 15px;
+	line-height: 1.8em;
+	transform-origin: 15px center;
+	tab-size: 0;
+}
+
+/* @end */
+
+/* @group Footer */
+
+footer {
+	width: 100%;
+	height: calc(100% - 30px);
+	padding: 0;
+	background-color: rgba(255,255,255,.1);
+	position: fixed;
+	bottom: calc(-100% + 60px);
+	left: 0;
+	box-shadow: 0 0 10px rgba(0,0,0,.25);
+	transition: bottom .15s ease-in;
+}
+
+footer.revealed {
+	bottom: 0;
+}
+
+.footer-head {
+	font-size: 10px;
+	height: 30px;
+	padding: 0 15px;
+	display: block;
+	position: relative;
+}
+
+.footer-head .select-wrapper {
+	width: 100px;
+	float: none;
+}
+
+#toggle-options {
+	appearance: none;
+	border: 0;
+	width: 27px;
+	height: 30px;
+	padding: 0;
+	background: transparent;
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+footer.revealed .options-svg {
+	opacity: .33;
+}
+
+/* @end */
+
+/* @group Options Panel */
+
+.options {
+	clear: both;
+	height: 100%;
+	padding: 10px 15px 50px;
+	background-color: rgba(0,0,0,.7);
+	margin: 0;
+	font-size: 10px;
+	color: #fff;
+	overflow-y: scroll;
+}
+
+.labels-options {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	margin-bottom: 15px;
+}
+
+.additional-options {
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	margin-bottom: 15px;
+}
+
+.labels-options label,
+.additional-options label {
+	display: block;
+	line-height: 21px;
+	height: 21px;
+	margin-bottom: 6px;
+	text-align: right;
+}
+
+.labels-options label span {
+	text-transform: uppercase;
+}
+
+.labels-options label span,
+.additional-options label span {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.labels-options input[type="text"] {
+	display: inline-block;
+	padding: 4px 10px;
+	width: calc(100% - 150px);
+	border: 2px solid;
+	background-color: transparent;
+	color: #fff;
+}
+
+.labels-options input[type="text"]:focus {
+	outline: none;
+}
+
+.additional-options input[type="checkbox"],
+.additional-options input[type="radio"] {
+	vertical-align: -5px !important;
+	margin-left: 5px !important;
+}
+
+.radio-buttons {
+	padding-top: 10px;
+	text-align: right;
+	font-weight: bold;
+}
+
+#twitter {
+	float: right;
+	font-size: 10px;
+	border: 0;
+
+/* @end */
