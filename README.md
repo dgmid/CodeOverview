@@ -1,9 +1,14 @@
-# CodeOverview-WebScript-Sidebar
+# ![code-overview-icon](https://cloud.githubusercontent.com/assets/1267580/25307267/38fbf2b6-279e-11e7-8351-2d5a4dab2c0e.png) CodeOverview
 
-Customizable code overview in the sidebar for Coda2
+CodeOverview is a [Coda](https://www.panic.com/coda/) webscript sidebar plugin
 
-![](https://github.com/dgmid/CodeOverview-WebScript-Sidebar/raw/master/img/code-overview.png)
+![code-overview](https://cloud.githubusercontent.com/assets/1267580/25307268/38fd9efe-279e-11e7-86eb-79d05b55a9dc.png)
 
+## Usage
+
+Provides a minaturized oveview of the currently active document to aid quick navigation. Click a line to jump straight to it.
+
+The plugin options can be accessed by clicking the gear icon ![options](https://cloud.githubusercontent.com/assets/1267580/25307266/38eeb880-279e-11e7-8353-81e120c2fd6c.png).
 
 ## Installation
 
@@ -11,6 +16,9 @@ Customizable code overview in the sidebar for Coda2
 2. Unzip it.
 3. Double-click the "CodeOverview.codawebscriptsidebar" icon.
 
+## Requirements
+
+[Coda 2.5+](https://www.panic.com/coda/)
 
 ## License
 
