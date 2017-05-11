@@ -12,7 +12,7 @@ The plugin options can be accessed by clicking the gear icon ![options](https://
 
 ## Installation
 
-1. Download [CodeOverview-WebScript-Sidebar-master.zip](https://github.com/dgmid/CodeOverview/archive/master.zip).
+1. Download [CodeOverview-master.zip](https://github.com/dgmid/CodeOverview/archive/master.zip).
 2. Unzip it.
 3. Double-click the "CodeOverview.codawebscriptsidebar" icon.
 
